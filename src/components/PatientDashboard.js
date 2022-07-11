@@ -17,7 +17,6 @@ let patient_email = localStorage.getItem("patient_email");
 function PatientDashboard() {
   const [appointment, setAppointments] = useState([]);
   const [specialities, setSpecialities] = useState([]);
-  const [update, setUpdate] = useState(0);
 
   const updateStatus = (id, time, date) => {
     console.log("Id from function" + id);
@@ -33,7 +32,6 @@ function PatientDashboard() {
       .then((response) => {
         // console.log(response.data)
         alert("Success");
-        setUpdate[!update];
       })
       .catch((err) => {
         console.log(err);
