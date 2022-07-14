@@ -15,8 +15,7 @@ function Contact() {
         <section className="mt-5" id="contact">
           <h3 className="text-center text-uppercase mt-5">Contact Us</h3>
           <p className="text-center w- m-auto">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris interdum purus at sem
-            ornare sodales. Morbi leo nulla, pharetra vel felis nec, ullamcorper condimentum quam.
+            We are here to provide you the information that you need.
           </p>
           <div className="row">
             <div className="col-sm-12 col-md-6 col-lg-3 my-5">

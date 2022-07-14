@@ -22,7 +22,7 @@ function Blog() {
           </div>
           <div className="col-md-6">
             <img
-              src="https://mbbsstudyinabroad.in/wp-content/uploads/2019/05/OC1OWB0.jpg"
+              src="https://media.istockphoto.com/photos/ro/conceptul-de-telemedicin%C4%83-id1079581050?k=20&m=1079581050&s=612x612&w=0&h=OCRm_J1QAEpyHkScoXCbLkQddbKe67KnFv5Z_kuc-gg="
               className="img-fluid mt-5"
             />
           </div>

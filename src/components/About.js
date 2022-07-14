@@ -22,7 +22,7 @@ function About() {
           </div>
           <div className="col-md-6">
             <img
-              src="https://mbbsstudyinabroad.in/wp-content/uploads/2019/05/OC1OWB0.jpg"
+              src="https://media.istockphoto.com/photos/ro/cinci-cadre-medicale-cu-stetoscoape-id185252689?k=20&m=185252689&s=612x612&w=0&h=lPceFm7JaoWYL4ALcv0XgUhz4ufK7mHWJmw6F8lm4hY="
               className="img-fluid mt-5"
             />
           </div>
