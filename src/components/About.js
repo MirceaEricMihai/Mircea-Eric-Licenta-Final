@@ -15,8 +15,8 @@ function About() {
             </h1>
             <hr />
             <p>
-              Since the first days of operation of Medify, our teaming has been focused on building
-              a high-qualities medicals service by Royal Therapy.
+              We are proud of our doctors! For a relationship as close as possible, we invite you to
+              see the best team that can take care of you.
             </p>
             <button className="btn btn-primary btn-lg">About Us</button>
           </div>
