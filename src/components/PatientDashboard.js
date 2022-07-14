@@ -111,7 +111,7 @@ function PatientDashboard() {
                       <td>{val.doctor_name}</td>
                       <td>
                         {
-                          specialities.filter((item) => item.speciality_id === val.speciality)[0][
+                          specialities.filter((item) => item.speciality_id == val.speciality)[0][
                             "name"
                           ]
                         }
