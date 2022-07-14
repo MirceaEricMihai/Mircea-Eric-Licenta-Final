@@ -4,27 +4,96 @@ import Navbar from "./Navbar";
 function Blog() {
   return (
     <div>
-      <div>
-        <Navbar />
-      </div>
-      <div className="container mt-5">
-        <div className="row mt-5">
-          <div className="col-md-6">
-            <h1 style={{ marginTop: "200px" }} className="text-info">
-              Blog Page
-            </h1>
-            <hr />
-            <p>
-              Since the first days of operation of Medify, our teaming has been focused on building
-              a high-qualities medicals service by Royal Therapy.
+      <Navbar />
+      <div className="cards">
+        <div className="card" style={{ width: "18rem" }}>
+          <img
+            src="../images/1.jpg"
+            className="card-img-top"
+            alt="..."
+            style={{ height: "200px" }}
+          />
+          <div className="card-body">
+            <h5 className="card-title">Card title</h5>
+            <p className="card-text">
+              Some quick example text to build on the card title and make up the bulk of the card's
+              content.
             </p>
-            <button className="btn btn-primary btn-lg">Our Blog Posts</button>
+            <a href="#" className="btn btn-primary">
+              Go somewhere
+            </a>
           </div>
-          <div className="col-md-6">
-            <img
-              src="https://media.istockphoto.com/photos/ro/conceptul-de-telemedicin%C4%83-id1079581050?k=20&m=1079581050&s=612x612&w=0&h=OCRm_J1QAEpyHkScoXCbLkQddbKe67KnFv5Z_kuc-gg="
-              className="img-fluid mt-5"
-            />
+        </div>
+        <div className="card" style={{ width: "18rem" }}>
+          <img
+            src="../images/1.jpg"
+            className="card-img-top"
+            alt="..."
+            style={{ height: "200px" }}
+          />
+          <div className="card-body">
+            <h5 className="card-title">Card title</h5>
+            <p className="card-text">
+              Some quick example text to build on the card title and make up the bulk of the card's
+              content.
+            </p>
+            <a href="#" className="btn btn-primary">
+              Go somewhere
+            </a>
+          </div>
+        </div>
+        <div className="card" style={{ width: "18rem" }}>
+          <img
+            src="../images/1.jpg"
+            className="card-img-top"
+            alt="..."
+            style={{ height: "200px" }}
+          />
+          <div className="card-body">
+            <h5 className="card-title">Card title</h5>
+            <p className="card-text">
+              Some quick example text to build on the card title and make up the bulk of the card's
+              content.
+            </p>
+            <a href="#" className="btn btn-primary">
+              Go somewhere
+            </a>
+          </div>
+        </div>
+        <div className="card" style={{ width: "18rem" }}>
+          <img
+            src="../images/1.jpg"
+            className="card-img-top"
+            alt="..."
+            style={{ height: "200px" }}
+          />
+          <div className="card-body">
+            <h5 className="card-title">Card title</h5>
+            <p className="card-text">
+              Some quick example text to build on the card title and make up the bulk of the card's
+              content.
+            </p>
+            <a href="#" className="btn btn-primary">
+              Go somewhere
+            </a>
+          </div>
+        </div>
+        <div className="card" style={{ width: "18rem" }}>
+          <img
+            src="../images/1.jpg"
+            className="card-img-top"
+            alt="..."
+            style={{ height: "200px" }}
+          />
+          <div className="card-body">
+            <h5 className="card-title">Card title</h5>
+            <p className="card-text">
+              Some quick example text to build on the card title and make up the bulk of the card's
+              content.
+            </p>
+            <a href="#" className="btn btn-primary">
+              Go somewhere
+            </a>
           </div>
         </div>
       </div>

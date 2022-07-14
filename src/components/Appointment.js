@@ -30,15 +30,19 @@ function Appointment() {
   let status = "Pending";
 
   const checkTimeAvailability = () => {
-    if (spec == "" || doc == "" || date == "" || selectedtime == "") {
+    if (spec === "" || doc === "" || date === "" || selectedtime === "") {
       alert("You have to complete all details");
       return;
     }
 
     axios
-      .post("https://mircea-eric-licenta.herokuapp.com/checkTime", { time: time, date: date, doctor: doc })
+      .post("https://mircea-eric-licenta.herokuapp.com/checkTime", {
+        time: time,
+        date: date,
+        doctor: doc,
+      })
       .then((response) => {
-        if (response.data != "") {
+        if (response.data !== "") {
           alert("Date and Time Already Booked for Selected Doctor !");
         } else {
           makeAppointment();
@@ -298,7 +302,7 @@ function Appointment() {
                 })} */}
                     </div>
 
-                    {doc != "" && (
+                    {doc !== "" && (
                       <div className="col-md-12">
                         <div className="form-group">
                           <label>Appointment Date</label>
@@ -320,7 +324,7 @@ function Appointment() {
                       </div>
                     )}
 
-                    {doc != "" && date != "" && (
+                    {doc !== "" && date !== "" && (
                       <div className="col-md-12">
                         <div className="form-group">
                           <label>Appointment Time</label>
@@ -329,7 +333,7 @@ function Appointment() {
                               {times.map((val, index) => {
                                 return (
                                   <div className="col-md-1">
-                                    {val.status == "free" && (
+                                    {val.status === "free" && (
                                       <button
                                         type="button"
                                         className="btn btn-primary"
@@ -341,7 +345,7 @@ function Appointment() {
                                         {val.value}
                                       </button>
                                     )}
-                                    {val.status == "busy" && (
+                                    {val.status === "busy" && (
                                       <button
                                         type="button"
                                         className="btn btn-danger"

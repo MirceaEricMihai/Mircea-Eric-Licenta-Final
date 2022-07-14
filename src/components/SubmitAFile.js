@@ -26,12 +26,12 @@ function SubmitAFile() {
     // Preventing sending the form data (by the HTML normal behavior)
     e.preventDefault();
     if (
-      surname == "" ||
-      name == "" ||
-      age == "" ||
-      diagnoses == "" ||
-      treatments == "" ||
-      recommendations == ""
+      surname === "" ||
+      name === "" ||
+      age === "" ||
+      diagnoses === "" ||
+      treatments === "" ||
+      recommendations === ""
     ) {
       alert("All Fields Required");
       return;
@@ -209,20 +209,6 @@ function SubmitAFile() {
                         />
                       </div>
                     </div>
-
-                    {/* <div className="form-group">
-                      <label>Choose a File</label>
-                      <div className="input-group mb-3">
-                        <input
-                          type="file"
-                          onChange={(e) => {
-                            setFile(e.target.files[0]);
-                          }}
-                          name="file"
-                          className="form-control"
-                        />
-                      </div>
-                    </div> */}
 
                     <div className="row">
                       <div className="form-group">

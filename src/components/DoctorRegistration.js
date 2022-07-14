@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import Navbar from "./Navbar";
-import image from "../images/doc.jpg";
 const createHistory = require("history").createBrowserHistory;
 
 function DoctorRegistration() {
@@ -15,16 +14,16 @@ function DoctorRegistration() {
 
   const registerDoctor = () => {
     if (
-      doctorFirstName == "" ||
-      doctorLastName == "" ||
-      doctorPassword == "" ||
-      doctorPhone == "" ||
-      doctorSpecialities == ""
+      doctorFirstName === "" ||
+      doctorLastName === "" ||
+      doctorPassword === "" ||
+      doctorPhone === "" ||
+      doctorSpecialities === ""
     ) {
       alert("All Fields Required");
     }
 
-    if (doctorPhone.length != 10) {
+    if (doctorPhone.length !== 10) {
       alert("Phone number should be 10 characters long");
       return;
     }
@@ -71,7 +70,7 @@ function DoctorRegistration() {
       <div className="container">
         <div className="row">
           <div className="col-md-7" style={{ marginTop: "200px" }}>
-            <img src={image} className="img-fluid" />
+            <img src="../../public/images/1.jpg" className="img-fluid" />
           </div>
           <div className="col-md-5 mt-5">
             <div className="card-header border-bottom-0 bg-transparent">

@@ -42,7 +42,7 @@ function Registration() {
       })
       .then((response) => {
         console.log(response);
-        if (response.statusCode == "200") {
+        if (response.statusCode === "200") {
           alert("Registered");
         }
       })

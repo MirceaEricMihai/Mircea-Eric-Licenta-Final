@@ -13,7 +13,6 @@ import PatientLogin from "./components/PatientLogin";
 import PatientObservationSheets from "./components/PatientObservationSheets";
 import PatientRegistration from "./components/PatientRegistration";
 import ResetPassword from "./components/ResetPassword";
-// import Scheduler from './components/ScheduleView';
 import SubmitAFile from "./components/SubmitAFile";
 import SubmitASheet from "./components/SubmitASheet";
 import Prices from "./components/Prices";

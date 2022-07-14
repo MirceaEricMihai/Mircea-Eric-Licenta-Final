@@ -16,7 +16,7 @@ function ResetPassword() {
         password: password,
       })
       .then((response) => {
-        if (response.status == "200") {
+        if (response.status === "200") {
           let history = createHistory();
 
           history.push("/login/patient");

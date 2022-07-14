@@ -23,7 +23,7 @@ function DoctorLogin() {
   }, []);
 
   const loginFunction = () => {
-    if (firstName == "" || password == "") {
+    if (firstName === "" || password === "") {
       alert("All Fields Required");
       return;
     }
@@ -34,7 +34,7 @@ function DoctorLogin() {
         password: password,
       })
       .then((response) => {
-        if (response.data == "No User Found") {
+        if (response.data === "No User Found") {
           alert("No User Found for Entered Credentials");
           isLoggedin = false;
         } else {
@@ -55,7 +55,7 @@ function DoctorLogin() {
           localStorage.setItem("doctor_speciality_id", speciality);
           localStorage.setItem(
             "doctor_speciality_name",
-            specialities.filter((item) => item.speciality_id == speciality)[0].name
+            specialities.filter((item) => item.speciality_id === speciality)[0].name
           );
           localStorage.setItem("isLoggedIn", isLoggedin);
           localStorage.setItem("type", type);

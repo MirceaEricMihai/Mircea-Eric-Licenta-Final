@@ -111,7 +111,7 @@ function PatientDashboard() {
                       <td>{val.doctor_name}</td>
                       <td>
                         {
-                          specialities.filter((item) => item.speciality_id == val.speciality)[0][
+                          specialities.filter((item) => item.speciality_id === val.speciality)[0][
                             "name"
                           ]
                         }
@@ -119,25 +119,25 @@ function PatientDashboard() {
                       <td>{val.time}</td>
                       <td>{val.date}</td>
 
-                      {val.status == "Accepted" && (
+                      {val.status === "Accepted" && (
                         <td>
                           <span class="badge badge-primary">Acepted</span>
                         </td>
                       )}
 
-                      {val.status == "Pending" && (
+                      {val.status === "Pending" && (
                         <td>
                           <span class="badge badge-secondary">Pending</span>
                         </td>
                       )}
 
-                      {val.status == "Canceled" && (
+                      {val.status === "Canceled" && (
                         <td>
                           <span class="badge badge-warning">Canceled</span>
                         </td>
                       )}
 
-                      {val.status == "Accepted" && (
+                      {val.status === "Accepted" && (
                         <td>
                           <button
                             type="submit"
@@ -152,7 +152,7 @@ function PatientDashboard() {
                         </td>
                       )}
 
-                      {val.status == "Pending" && (
+                      {val.status === "Pending" && (
                         <td>
                           <button
                             type="submit"
@@ -167,7 +167,7 @@ function PatientDashboard() {
                         </td>
                       )}
 
-                      {val.status == "Canceled" && (
+                      {val.status === "Canceled" && (
                         <td>
                           <button type="submit" disabled className="btn btn-danger btn-block">
                             Cancel
@@ -175,13 +175,7 @@ function PatientDashboard() {
                         </td>
                       )}
 
-                      {/* <td style={{cursor: "pointer"}} onClick={() => {
-                              downloadFile(
-                                val.sheet_by_doctor
-                              );
-                            }}><a>{val.sheet_by_doctor}</a></td> */}
-
-                      {val.status == "Accepted" && (
+                      {val.status === "Accepted" && (
                         <td>
                           <button
                             className="btn btn-success btn-block"
@@ -196,7 +190,7 @@ function PatientDashboard() {
                         </td>
                       )}
 
-                      {val.status == "Pending" && (
+                      {val.status === "Pending" && (
                         <td>
                           <button
                             className="btn btn-success btn-block"
@@ -209,7 +203,7 @@ function PatientDashboard() {
                         </td>
                       )}
 
-                      {val.status == "Canceled" && (
+                      {val.status === "Canceled" && (
                         <td>
                           <button
                             className="btn btn-success btn-block"
@@ -221,34 +215,6 @@ function PatientDashboard() {
                           </button>
                         </td>
                       )}
-
-                      {/* 
-{val.sheet_by_patient.length < 0 && (
-                        <td>
-                          <Link
-                      
-                            className="btn btn-danger"
-                            style={{ textDecoration: "none" }}
-                            onClick={() => {
-                              uploadASheet(val.appointment_id);
-                            }}
-                          >
-                             <i className="fa fa-list-alt"></i><i className="ml-2 fa fa-upload"></i>
-                          </Link>
-                        </td> */}
-                      {/* )}       */}
-
-                      {/* {val.sheet_by_patient.length > 0 && (
-                        <td>
-                          <button
-                          disabled
-                            className="btn btn-light"
-                            style={{ textDecoration: "none" }}
-                          >
-                            <i className="fa fa-list-alt"></i><i className="ml-2 fa fa-upload"></i>
-                          </button>
-                        </td>
-                      )} */}
                     </tr>
                   );
                 })}
