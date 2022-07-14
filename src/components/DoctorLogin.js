@@ -20,7 +20,7 @@ function DoctorLogin() {
       .catch((err) => {
         console.log(err);
       });
-  });
+  }, []);
 
   const loginFunction = () => {
     if (firstName == "" || password == "") {
