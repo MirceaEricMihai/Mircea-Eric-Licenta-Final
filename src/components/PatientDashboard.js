@@ -119,25 +119,25 @@ function PatientDashboard() {
                       <td>{val.time}</td>
                       <td>{val.date}</td>
 
-                      {val.status === "Accepted" && (
+                      {val.status == "Accepted" && (
                         <td>
                           <span class="badge badge-primary">Acepted</span>
                         </td>
                       )}
 
-                      {val.status === "Pending" && (
+                      {val.status == "Pending" && (
                         <td>
                           <span class="badge badge-secondary">Pending</span>
                         </td>
                       )}
 
-                      {val.status === "Canceled" && (
+                      {val.status == "Canceled" && (
                         <td>
                           <span class="badge badge-warning">Canceled</span>
                         </td>
                       )}
 
-                      {val.status === "Accepted" && (
+                      {val.status == "Accepted" && (
                         <td>
                           <button
                             type="submit"
@@ -152,7 +152,7 @@ function PatientDashboard() {
                         </td>
                       )}
 
-                      {val.status === "Pending" && (
+                      {val.status == "Pending" && (
                         <td>
                           <button
                             type="submit"
@@ -167,7 +167,7 @@ function PatientDashboard() {
                         </td>
                       )}
 
-                      {val.status === "Canceled" && (
+                      {val.status == "Canceled" && (
                         <td>
                           <button type="submit" disabled className="btn btn-danger btn-block">
                             Cancel
@@ -175,7 +175,7 @@ function PatientDashboard() {
                         </td>
                       )}
 
-                      {val.status === "Accepted" && (
+                      {val.status == "Accepted" && (
                         <td>
                           <button
                             className="btn btn-success btn-block"
@@ -190,7 +190,7 @@ function PatientDashboard() {
                         </td>
                       )}
 
-                      {val.status === "Pending" && (
+                      {val.status == "Pending" && (
                         <td>
                           <button
                             className="btn btn-success btn-block"
@@ -203,7 +203,7 @@ function PatientDashboard() {
                         </td>
                       )}
 
-                      {val.status === "Canceled" && (
+                      {val.status == "Canceled" && (
                         <td>
                           <button
                             className="btn btn-success btn-block"

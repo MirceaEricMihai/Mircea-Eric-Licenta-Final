@@ -14,16 +14,16 @@ function DoctorRegistration() {
 
   const registerDoctor = () => {
     if (
-      doctorFirstName === "" ||
-      doctorLastName === "" ||
-      doctorPassword === "" ||
-      doctorPhone === "" ||
-      doctorSpecialities === ""
+      doctorFirstName == "" ||
+      doctorLastName == "" ||
+      doctorPassword == "" ||
+      doctorPhone == "" ||
+      doctorSpecialities == ""
     ) {
       alert("All Fields Required");
     }
 
-    if (doctorPhone.length !== 10) {
+    if (doctorPhone.length != 10) {
       alert("Phone number should be 10 characters long");
       return;
     }
@@ -38,7 +38,7 @@ function DoctorRegistration() {
       })
       .then((response) => {
         // console.log(response);
-        if (response.data === "OK") {
+        if (response.data == "OK") {
           alert("Doctor Registered Successfully");
           let history = createHistory();
 

@@ -20,22 +20,22 @@ function PatientRegistration() {
 
   const registerPatient = () => {
     if (
-      patientFirstName === "" ||
-      patientLastName === "" ||
-      patientPhone === "" ||
-      patientPassword === "" ||
-      patientDob === "" ||
-      patientEmail === "" ||
-      patientCNP === ""
+      patientFirstName == "" ||
+      patientLastName == "" ||
+      patientPhone == "" ||
+      patientPassword == "" ||
+      patientDob == "" ||
+      patientEmail == "" ||
+      patientCNP == ""
     ) {
       alert("All Fields Required");
       return;
     }
-    if (patientCNP.length !== 13) {
+    if (patientCNP.length != 13) {
       alert("CNP should be 13 characters long");
       return;
     }
-    if (patientPhone.length !== 10) {
+    if (patientPhone.length != 10) {
       alert("Phone number should be 10 characters long");
       return;
     }
@@ -54,7 +54,7 @@ function PatientRegistration() {
         cnp: patientCNP,
       })
       .then((response) => {
-        if (response.data === "OK") {
+        if (response.data == "OK") {
           alert("Patient Registered Successfully");
           let history = createHistory();
 

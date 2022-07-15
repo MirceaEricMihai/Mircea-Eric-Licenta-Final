@@ -26,12 +26,12 @@ function SubmitAFile() {
     // Preventing sending the form data (by the HTML normal behavior)
     e.preventDefault();
     if (
-      surname === "" ||
-      name === "" ||
-      age === "" ||
-      diagnoses === "" ||
-      treatments === "" ||
-      recommendations === ""
+      surname == "" ||
+      name == "" ||
+      age == "" ||
+      diagnoses == "" ||
+      treatments == "" ||
+      recommendations == ""
     ) {
       alert("All Fields Required");
       return;

@@ -51,7 +51,7 @@ function Appointment() {
       })
       .then((response) => {
         // console.log(response);
-        if (response.data === "OK") {
+        if (response.data == "OK") {
           alert("Appointment Made Successfully");
         }
       })

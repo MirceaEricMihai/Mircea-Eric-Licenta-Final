@@ -22,19 +22,20 @@ function SubmitASheet() {
   const submitSheet = (e) => {
     e.preventDefault();
     if (
-      surname === "" ||
-      name === "" ||
-      vast === "" ||
-      cnp === "" ||
-      diagnoses === "" ||
-      surgery === "" ||
-      symptops === "" ||
-      file === ""
+      (surname =
+        "" ||
+        name == "" ||
+        vast == "" ||
+        cnp == "" ||
+        diagnoses == "" ||
+        surgery == "" ||
+        symptops == "" ||
+        file == "")
     ) {
       alert("All Fields Required");
       return;
     }
-    if (cnp.length !== 13) {
+    if (cnp.length != 13) {
       alert("CNP should be 13 characters long");
       return;
     }
@@ -135,7 +136,7 @@ function SubmitASheet() {
                             <label>
                               {
                                 specialities.filter(
-                                  (item) => item.speciality_id === val.speciality
+                                  (item) => item.speciality_id == val.speciality
                                 )[0]["name"]
                               }
                             </label>

@@ -40,7 +40,7 @@ function DoctorDashboard() {
   };
 
   const downloadFile = (name) => {
-    if (name === "No Files Added") alert("No File Added for Download");
+    if (name == "No Files Added") alert("No File Added for Download");
     axios
       .get("https://mircea-eric-licenta.herokuapp.com/file/" + name, { responseType: "blob" })
       .then((response) => {
@@ -102,25 +102,25 @@ function DoctorDashboard() {
                       <td>{val.time}</td>
                       <td>{val.date}</td>
 
-                      {val.status === "Pending" && (
+                      {val.status == "Pending" && (
                         <td>
                           <span class="badge badge-secondary">Pending</span>
                         </td>
                       )}
 
-                      {val.status === "Accepted" && (
+                      {val.status == "Accepted" && (
                         <td>
                           <span class="badge badge-primary">Accepted</span>
                         </td>
                       )}
 
-                      {val.status === "Canceled" && (
+                      {val.status == "Canceled" && (
                         <td>
                           <span class="badge badge-warning">Canceled</span>
                         </td>
                       )}
 
-                      {val.status === "Accepted" && (
+                      {val.status == "Accepted" && (
                         <td>
                           <div class="btn-group btn-block" role="group" aria-label="Basic example">
                             <button
@@ -151,7 +151,7 @@ function DoctorDashboard() {
                         </td>
                       )}
 
-                      {val.status === "Pending" && (
+                      {val.status == "Pending" && (
                         <td>
                           <div class="btn-group btn-block" role="group" aria-label="Basic example">
                             <button
@@ -190,7 +190,7 @@ function DoctorDashboard() {
                         </td>
                       )}
 
-                      {val.status === "Canceled" && (
+                      {val.status == "Canceled" && (
                         <td>
                           <div class="btn-group btn-block" role="group" aria-label="Basic example">
                             <button

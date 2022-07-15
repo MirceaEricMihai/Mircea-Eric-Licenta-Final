@@ -11,7 +11,7 @@ function PatientLogin() {
   const [password, setPassword] = useState("");
 
   const loginFunction = () => {
-    if (firstName === "" || password === "") {
+    if (firstName == "" || password == "") {
       alert("All Fields Required");
       return;
     }
@@ -21,7 +21,7 @@ function PatientLogin() {
         password: password,
       })
       .then((response) => {
-        if (response.data === "No User Found") {
+        if (response.data == "No User Found") {
           alert("No User Found for Entered Credentials");
           isLoggedin = false;
         } else {

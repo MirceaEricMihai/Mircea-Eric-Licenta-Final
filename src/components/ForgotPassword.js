@@ -14,7 +14,7 @@ function ForgotPassword() {
       })
       .then((response) => {
         console.log(response);
-        if (response.status === "200") {
+        if (response.status == "200") {
           setValue("Email Sent ! Check Your Email !!");
         }
       })

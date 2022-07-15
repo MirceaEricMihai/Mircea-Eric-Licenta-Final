@@ -93,7 +93,7 @@ function Navbar() {
             </li>
           )}
 
-          {type === "Doctor" && (
+          {type == "Doctor" && (
             <li className="navbar-item">
               <Link to="/patient/sheets" className="nav-link">
                 <span className="m-3">Patient Observation Sheets</span>
@@ -101,7 +101,7 @@ function Navbar() {
             </li>
           )}
 
-          {type === "Doctor" && (
+          {type == "Doctor" && (
             <li className="navbar-item">
               <Link to="/doctor/dashboard" className="nav-link">
                 <span className="m-3">Doctor Dashboard</span>
@@ -109,7 +109,7 @@ function Navbar() {
             </li>
           )}
 
-          {type === "Patient" && (
+          {type == "Patient" && (
             <li className="navbar-item">
               <Link to="/patient/dashboard" className="nav-link">
                 <span className="m-3">Patient Dashboard</span>
@@ -117,7 +117,7 @@ function Navbar() {
             </li>
           )}
 
-          {type === "Patient" && (
+          {type == "Patient" && (
             <li className="navbar-item">
               <Link to="/patient/medicals" className="nav-link">
                 <span className="m-3">Medical Letters</span>
@@ -125,7 +125,7 @@ function Navbar() {
             </li>
           )}
 
-          {type === "Patient" && (
+          {type == "Patient" && (
             <li className="navbar-item">
               <Link
                 to="/patient/appointment"
