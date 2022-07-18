@@ -50,7 +50,7 @@ function Contact() {
                 <div className="card-body px-0 text-center">
                   <i className="fa fa-globe fa-5x mb-3" aria-hidden="true"></i>
                   <h4 className="text-uppercase mb-5">email</h4>
-                  <p className="contact">royaltherapysend@outlook.com</p>
+                  <p className="contact">royaltherapytest@outlook.com</p>
                 </div>
               </div>
             </div>

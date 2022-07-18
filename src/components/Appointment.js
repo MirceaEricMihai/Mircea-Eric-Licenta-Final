@@ -9,12 +9,6 @@ function Appointment() {
   const [times, setTimes] = useState([]);
   const [selectedtime, setSelectedtime] = useState([]);
 
-  // const [first_name, setFirstName] = useState('');
-  // const [last_name, setLastName] = useState('');
-  // const [email, setEmail] = useState('');
-  // const [phone, setPhone] = useState('');
-  // const [dob, setDob] = useState('');
-  // const [cnp, setCnp] = useState('');
   const [spec, setSpec] = useState("");
   const [doc, setDoc] = useState("");
   const [time, setTime] = useState("");
