@@ -70,7 +70,7 @@ function DoctorRegistration() {
       <div className="container">
         <div className="row">
           <div className="col-md-7" style={{ marginTop: "200px" }}>
-            <img src="../../public/images/1.jpg" className="img-fluid" />
+            <img src="../../public/images/doc.jpg" className="img-fluid" />
           </div>
           <div className="col-md-5 mt-5">
             <div className="card-header border-bottom-0 bg-transparent">
