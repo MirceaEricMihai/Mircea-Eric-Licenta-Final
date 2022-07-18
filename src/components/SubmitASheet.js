@@ -22,8 +22,7 @@ function SubmitASheet() {
   const submitSheet = (e) => {
     e.preventDefault();
     if (
-      (surname =
-        "" ||
+      (surname == "" ||
         name == "" ||
         vast == "" ||
         cnp == "" ||
